@@ -1,0 +1,82 @@
+.hero{
+    height: calc(100vh - 60px);
+    background: #998f8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #474343;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.hero-left h1{
+    font-size: 5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.hero-left p{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.hero-left h2{
+    font-size: 3em;
+}
+
+.hero-right{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    padding: 47px;
+    justify-content: center;
+    flex: 1;
+}
+
+@media (width < 1024px) {
+    .hero-left h1{
+        font-size: 4em;
+    }
+    
+}
+
+@media (width < 720px) {
+    .hero{
+        height: calc(100vh - 60px);
+        background: #998f8f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-left{
+        gap: 20px;
+        width: 90%;
+    }
+
+    .hero-left h1{
+        font-size: 2em;
+    }
+
+    .hero-left p{
+        font-size: 1.2em;
+    }
+
+    .hero-left h2{
+        font-size: 1.5em;
+    }
+    
+}

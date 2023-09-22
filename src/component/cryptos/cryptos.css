@@ -1,0 +1,57 @@
+.cryptos{
+    color: #ffd100;
+    height: 100vh;
+    width: 100%;
+    background: #595656;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.crypto-heading{
+    padding-top: 50px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cryptos .ul{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.li{
+    background: #605e5e;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 35px;
+    margin: 5px;
+}
+
+.image img{
+    width: 30px;
+    height: 30px;
+}
+
+.name{
+    width: 15%;
+}
+
+.price{
+    width: 15%;
+}
+
+@media (width < 720px){
+    .crypto-heading{
+        padding-top: 90px;
+        font-size: 2em;
+    }
+}
