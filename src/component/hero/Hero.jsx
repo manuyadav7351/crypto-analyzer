@@ -16,9 +16,9 @@ const Hero = ({data}) => {
   return (
     <div className='hero' id='Home'>
       <div className='hero-left'>
-        <h1>Buy Crypto</h1>
+        <div className='h1'>Buy Crypto</div>
         <p>you can buy the crypto here and look into it </p>
-        <h2>welcome to the world of crypto</h2>
+        <div className='h2'>welcome to the world of crypto</div>
       </div>
 
       <div className='hero-right'>

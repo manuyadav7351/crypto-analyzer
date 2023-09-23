@@ -44,16 +44,37 @@
     padding: 20px 0;
 }
 
-@media (width < 940px) {
-    .right-heading{
-        font-size: 20px;
+
+
+/* media query for width less then 940px */
+
+@media (width <= 940px) {
+
+    
+    .left-child{
+        flex: 1;
     }
 
-    .right-child img{
-        width: 350px;
-
+    .right-child{
+        flex: 1;
     }
+
+    .left-child img{
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    
+.right-heading{
+    font-size: 20px;
+    padding: 20px 0;
+    width: 80%;
 }
+}
+
+
+/* media query for width less then 720px */
 
 @media (width < 720px) {
 

@@ -11,17 +11,14 @@
     flex-direction: column;
     flex: 1;
     background: #474343;
-    height: 100%;
-    width: 100%;
     align-items: center;
     justify-content: center;
     color: #fff;
-    gap: 40px;
-    padding: 0 20px;
+    padding: 10px;
 }
 
-.hero-left h1{
-    font-size: 5em;
+.hero-left .h1{
+    font-size: 4em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
@@ -31,26 +28,38 @@
     font-weight: 600;
 }
 
-.hero-left h2{
-    font-size: 3em;
+.hero-left .h2{
+    font-size: 1.5em;
 }
 
 .hero-right{
-    height: 100%;
+    place-items: center;
+    flex: 1;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    align-items: center;
-    padding: 47px;
-    justify-content: center;
-    flex: 1;
+    gap: 10px;
 }
 
-@media (width < 1024px) {
+
+/* media query for width less then 940px */
+
+@media (width <= 940px) {
     .hero-left h1{
-        font-size: 4em;
+        font-size: 3em;
     }
     
+    .hero-left p{
+        font-size: 1em;
+    }
+    
+    .hero-left h2{
+        font-size: 2em;
+    }
 }
+
+
+/* media query for width less then 720px */
+
 
 @media (width < 720px) {
     .hero{
@@ -67,16 +76,16 @@
         width: 90%;
     }
 
-    .hero-left h1{
-        font-size: 2em;
+    .hero-left .h1{
+        font-size: 1.7em;
     }
 
     .hero-left p{
         font-size: 1.2em;
     }
 
-    .hero-left h2{
-        font-size: 1.5em;
+    .hero-left .h2{
+        font-size: 1em;
     }
     
 }

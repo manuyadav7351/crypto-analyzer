@@ -1,6 +1,5 @@
 .cryptos{
     color: #ffd100;
-    height: 100vh;
     width: 100%;
     background: #595656;
     display: flex;
@@ -18,9 +17,10 @@
 }
 
 .cryptos .ul{
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
 }
 
 .li{
@@ -34,6 +34,7 @@
     width: 100%;
     height: 35px;
     margin: 5px;
+    text-overflow: ellipsis;
 }
 
 .image img{
@@ -42,7 +43,7 @@
 }
 
 .name{
-    width: 15%;
+    width: 20%;
 }
 
 .price{
