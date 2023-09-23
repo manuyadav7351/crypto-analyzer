@@ -15,6 +15,7 @@ const Navbar = () => {
     if(element){
       element.scrollIntoView({behavior : 'smooth'})
     }
+    setClicked(!clicked);
   }
 
   useEffect(()=>{
